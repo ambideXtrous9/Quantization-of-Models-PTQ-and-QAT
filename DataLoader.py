@@ -4,19 +4,27 @@ from PIL import Image
 from torchvision import transforms
 from torchvision.datasets import ImageFolder
 
+input_size = (28,28)
+mean = [0.485, 0.456, 0.406] 
+std = [0.229, 0.224, 0.225]
+
+
+
 
 # Define transformations (adjust as needed)
 traintransform = transforms.Compose([
-    transforms.Resize((28, 28)),
+    transforms.Resize(input_size),
     transforms.ToTensor(),
-    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+    transforms.Normalize(mean=mean, std=std),
+    transforms.RandomResizedCrop(input_size, scale=(0.5, 1.0)),
+    transforms.RandomHorizontalFlip(),
 ])
 
 
 valtransform = transforms.Compose([
-    transforms.Resize((28, 28)),
+    transforms.Resize(input_size),
     transforms.ToTensor(),
-    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+    transforms.Normalize(mean=mean, std=std),
 ])
 
 
