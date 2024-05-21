@@ -19,4 +19,5 @@ Quantization-aware training (QAT) is a fine-tuning of the PTQ model, where the m
 
 #### References :
 
-1. [QAT](https://github.com/fbsamples/pytorch-quantization-workshop)
+1. [QAT PyTorch](https://github.com/fbsamples/pytorch-quantization-workshop)
+2. [QAT Details](https://towardsdatascience.com/inside-quantization-aware-training-4f91c8837ead)
