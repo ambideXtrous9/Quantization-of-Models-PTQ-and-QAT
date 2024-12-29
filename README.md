@@ -1,6 +1,6 @@
 # Quantization 
 
-Link : (https://www.kaggle.com/code/sushovansaha9/quantization-ptq-and-qat-on-cnn-using-keras/notebook)
+Link : [Quantization : PTQ and QAT on CNN using Keras](https://www.kaggle.com/code/sushovansaha9/quantization-ptq-and-qat-on-cnn-using-keras/notebook)
 
 #### **Quantization is a model size reduction technique that converts model weights from high-precision floating-point representation to low-precision floating-point (FP) or integer (INT) representations, such as 16-bit or 8-bit.**
 
